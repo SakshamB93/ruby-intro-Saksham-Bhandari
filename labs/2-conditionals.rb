@@ -27,6 +27,16 @@ puts die1
 die2 = rand(1..6)
 puts die2
 
+result=die1+die2
+
 # 3. create a variable for the total and write it to the screen
-total = die1 + die2
-puts "The total is: #{total}"
+
+puts "The total is: #{result}"
+
+if result==7 || result==11
+    puts "YOU WIN!"
+elsif result==2 || result==3 || result==12
+    puts "YOU LOSE!"
+else 
+    puts "the point is #{result}"
+end
